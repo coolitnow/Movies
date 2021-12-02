@@ -10,10 +10,10 @@ const MovieModal = props => {
         {/* stopPropagation here stops the closing on click function to be called until it is called again in its specific inner div */}
             <div className='modal-content' onClick={e => e.stopPropagation()}>
                 <div className='modal-header'>
-                    <h4 className='modal-title'>Modal Title</h4>
+                    <h4 className='modal-title'>{props.title}</h4>
                 </div>
                 <div className='modal-body'>
-                    This is modal content.
+                    {props.children}
                 </div>
                 <div className='modal-footer'>
                 {/*onClick here calls the onClose function in App*/}

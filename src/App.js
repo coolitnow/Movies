@@ -17,7 +17,9 @@ function App() {
           Show MovieModal
         </button>
         {/* onClose is the function passed to MovieModal. onClick in Modal calls onClose which changes show to false, thus closing the Modal */}
-        <MovieModal onClose={() => setShow(false)} show={show}/>
+        <MovieModal onClose={() => setShow(false)} show={show}>
+          <p>This is modal body</p>
+        </MovieModal>
     </div>
   );
 }
