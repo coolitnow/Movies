@@ -4,7 +4,7 @@ import React,
   {useState} from 'react';
 import Movies from './Movies.js';
 import './MovieModal.css'
-import MovieModal from './MovieModal'
+import MovieModal from './components/MovieModal'
 
 function App() {
   //declare new state var to control whether Modal is shown or not. Var named show, useState sets the default value of this state car to "false". setShow is the function that will update show
